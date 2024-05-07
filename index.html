@@ -19,7 +19,7 @@
   <body>
     <!-- Sign-up form start -->
 
-    <section class="sign">
+    <section class="sign" id="sign">
       <article>
         <h1>Stay updated!</h1>
         Join 60,000+ product managers receiving monthly updates on:
@@ -28,9 +28,17 @@
           <li>Measuring to ensure updates are a success</li>
           <li>And much more!</li>
         </ul>
-        <label for="email">Email address </label>
-        <input type="email" id="email" value="email@company.com" />
-        <button>Subscribe to monthly newsletter</button>
+        <form>
+          <label for="email">Email address </label>
+          <input
+            type="email"
+            id="email"
+            value="email@company.com"
+            id="in"
+            required
+          />
+          <button class="send">Subscribe to monthly newsletter</button>
+        </form>
       </article>
       <img src="./assets/images/illustration-sign-up-desktop.svg" alt="image" />
     </section>
@@ -39,11 +47,16 @@
 
     <!-- Success message start -->
 
-    <section class="none">
+    <section class="none" id="succes">
+      <img
+        src="./assets/images/icon-success.svg"
+        alt="check symbole"
+        class="check"
+      />
       <h1>Thanks for subscribing!</h1>
       A confirmation email has been sent to ash@loremcompany.com. Please open it
       and click the button inside to confirm your subscription.
-      <button>Dismiss message</button>
+      <button class="desmiss">Dismiss message</button>
     </section>
 
     <!-- Success message end -->
